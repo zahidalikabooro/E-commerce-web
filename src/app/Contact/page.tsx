@@ -1,10 +1,10 @@
-import React from 'react'
-import { FaGreaterThan } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa6";
-import { FaClock } from "react-icons/fa";
+import React from 'react';
+import { FaGreaterThan } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
+import { FaPhone } from 'react-icons/fa6';
+import { FaClock } from 'react-icons/fa';
 
-export default function page() {
+const ContactPage = () => {
   return (
     <div>
       {/* Header Section */}
@@ -93,7 +93,7 @@ export default function page() {
               />
               <textarea
                 placeholder="Your Message"
-                rows="3"
+                rows={3}
                 className="w-full p-3 sm:p-4 border border-gray-300 rounded"
               ></textarea>
               <button className="w-full sm:w-[200px] md:w-[250px] bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">
@@ -122,5 +122,7 @@ export default function page() {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default ContactPage;
